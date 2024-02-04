@@ -135,8 +135,9 @@ answerBtn.addEventListener("click", (evt) => {
             finalResultForm.classList.remove(HIDDEN_CLASS_NAME);
             finalResult.innerText = `Congraturation. You complete memorizing mission. Your final score is ${currentScore.innerText}${totalScore.innerText}`;
         } else {
-            if ((currentType === SPELLING && answer.value === selectedWord.meaning)
-            || (currentType === MEANING && answer.value === selectedWord.spelling)) {
+            console.log(currentType, answer.value, selectedWord.meaning);
+            if ((currentType === SPELLING && answer.value === selectedWord.spelling)
+            || (currentType === MEANING && answer.value === selectedWord.meaning)) {
                 eachResult.innerText = "Correct";
                 currentScore.innerText = parseInt(currentScore.innerText) + 1;
                 totalCount += 1;

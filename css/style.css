@@ -162,7 +162,7 @@ input {
 }
 
 .score {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 20px;
     color: #ca64f4;
 }
@@ -186,4 +186,10 @@ input {
     color: white; 
     position: fixed;
     bottom: 30px;
+}
+
+.each-result span {
+    margin-top: 30px;
+    font-size: 30px;
+    color: white; 
 }
