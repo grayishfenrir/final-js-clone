@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/f098f5664d.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Memorize Word!</title>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="bgImg"></div>
+		</div>
+		<section class="login-center">
+			<form class="login">
+				<h1>What is your name?</h1>
+				<input type="text" />
+			</form>
+		</section>
+		<main class="main">
+			<section class="main-flex">
+				<section class="welcome">
+					<h1></h1>
+					<form class="logout">
+						<button title="Log out">
+							<i class="fa-solid fa-arrow-right-from-bracket"></i>
+						</button>
+					</form>
+				</section>
+				<h2 class="clock"></h2>
+				<form class="save-form">
+					<div class="save-word">
+						<h6>기억하고 싶은 단어를 입력하세요.</h6>
+						<input type="text" required />
+						<h6>단어의 의미를 입력하세요.</h6>
+						<input type="text" required />
+						<button class="save hidden"></button>
+					</div>
+					<ul class="word-list"></ul>
+				</form>
+				<button class="start">암기에 도전해보세요! 클릭!</button>
+				<form class="answer-form hidden">
+					<h6 class="problem"></h6>
+					<input type="text" placeholder="정답을 입력하세요." />
+					<div class="each-result">
+						<span></span>
+					</div>
+					<div class="score">
+						<span>Current score:&nbsp;</span>
+						<span class="current-score"></span>
+						<span class="total-score"></span>
+					</div>
+					<button class="answer hidden"></button>
+				</form>
+				<form class="final-result-form hidden">
+					<span class="final-result"></span>
+					<button>Return to Save Words.</button>
+				</form>
+				<div class="weather">
+					<span></span>
+					<span></span>
+				</div>
+			</section>
+		</main>
+		<script src="js/login.js"></script>
+		<script src="js/clock.js"></script>
+		<script src="js/background.js"></script>
+		<script src="js/memorize.js"></script>
+		<script src="js/weather.js"></script>
+	</body>
+</html>
